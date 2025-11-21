@@ -1,0 +1,265 @@
+body {
+  background: linear-gradient(135deg, #fafafa 0%, #f3e0ff 40%, #d1edff 100%);
+  color: #312244;
+  font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: #f537b5;
+  color: #fff;
+  box-shadow: 0 2px 10px #e14040;
+  padding: 1.2rem 0;
+  text-align: center;
+}
+
+.logo img {
+  width: 80px;
+  border-radius: 80%;
+  border: 3px solid #f9d923;
+}
+
+.logo h1 {
+  margin-top: 10px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  font-size: 2rem;
+  color: #ffa500;
+}
+
+nav.menu ul {
+  display: flex;
+  justify-content: flex-end;
+  background: #de4ef7;
+  padding: 1em 2em;
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+}
+
+nav.menu a.btn {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2em;
+  padding: 0.5em 1em;
+  border-radius: 7px;
+  transition: background 0.2s;
+}
+
+nav.menu a.btn:hover, nav.menu a.btn:focus {
+  background: #42464e;
+}
+
+.submenu, .submenu2 {
+  display: none;
+  position: absolute;
+  margin-top: 0.7em;
+  background: #23252a;
+  border-radius: 6px;
+  box-shadow: 0 1px 7px #222;
+  padding: 0.3em 0;
+  min-width: 140px;
+  z-index: 100;
+}
+
+.submenu.show, .submenu2.show {
+  display: block;
+}
+
+.menu-hobby { position: relative; }
+.menu-musica { position: relative; }
+
+.submenu2 {
+  left: 145px;
+  top: -8px;
+}
+
+.submenu li a, .submenu2 li a {
+  display: block;
+  color: #fff;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  font-size: 1em;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+.submenu li a:hover, .submenu2 li a:hover {
+  background: #42464e;
+  color: #f9d923;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+  background: linear-gradient(90deg, #e0c3fc 0%, #8ec5fc 100%);
+}
+
+.presentacion {
+  text-align: center;
+  background: #fff;
+  padding: 2em;
+  border-radius: 25px;
+  box-shadow: 0 2px 16px #ccc;
+  margin: 2em 0;
+}
+
+.presentacion .perfil {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  border: 4px solid #662d91;
+  object-fit: cover;
+  margin-bottom: 1em;
+}
+
+.presentacion h2 {
+  font-size: 1.7rem;
+  margin: 0.6em 0 0.2em 0;
+  color: #662d91;
+}
+
+.presentacion span {
+  color: #f9d923;
+  font-weight: bold;
+}
+
+.frase {
+  margin: 1em 0;
+  font-style: italic;
+  color: #188998;
+}
+
+.botones-hobby {
+  margin-top: 1.5em;
+}
+
+.boton {
+  background: #f9d923;
+  color: #662d91;
+  padding: 0.7em 1.3em;
+  margin: 0 0.5em;
+  border: none;
+  border-radius: 22px;
+  font-size: 1rem;
+  cursor: pointer;
+  letter-spacing: 1px;
+  transition: background 0.3s, color 0.3s;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.boton:hover {
+  background: #662d91;
+  color: #f9d923;
+}
+
+.hobbies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2em;
+  background: #fff7ed;
+  padding: 2em 0;
+}
+
+.hobby {
+  flex: 1 1 230px;
+  background: #f3e0ff;
+  border-radius: 20px;
+  box-shadow: 0 2px 10px #c0bfc1;
+  margin: 1em;
+  padding: 1.5em;
+  min-width: 260px;
+  text-align: center;
+}
+
+.hobby img {
+  width: 90%;
+  border-radius: 18px;
+  margin-bottom: 1em;
+  border: 2px solid #ffa500;
+}
+
+.genero {
+  margin-top: 1em;
+  margin-bottom: 2em;
+  background: #c4ebfe;
+  border-radius: 13px;
+  padding: 1em;
+  box-shadow: 0 1px 7px #afcef7;
+}
+
+.genero img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 13px;
+  border: 2px solid #662d91;
+  margin: 0.5em 0;
+}
+
+h4 {
+  margin-bottom: 0.5em;
+  color: #662d91;
+  font-size: 1.2em;
+}
+
+audio {
+  width: 80%;
+  margin-top: 0.3em;
+}
+
+.contacto {
+  text-align: center;
+  background: #e2ffe7;
+  padding: 2em 0;
+}
+
+.contacto h2 {
+  color: #188998;
+  font-size: 1.4em;
+  margin-bottom: 0.4em;
+}
+
+.contacto button {
+  background: #ffa500;
+  color: #fff;
+  border-radius: 24px;
+  border: none;
+  padding: 0.8em 2em;
+  font-size: 1.1em;
+  font-weight: bold;
+  margin-top: 1em;
+  cursor: pointer;
+  transition: background 0.25s;
+}
+
+.contacto button:hover {
+  background: #662d91;
+  color: #fff;
+}
+
+footer {
+  background: #662d91;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+  letter-spacing: 0.6px;
+  font-size: 1em;
+}
+
+@media (max-width: 900px) {
+  .hobbies {
+    flex-direction: column;
+    align-items: center;
+  }
+  .presentacion, .hobby {
+    min-width: unset;
+    width: 90vw;
+  }
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mi Hobby - Doris Gonzales Delgadillo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Encabezado -->
+   
+  <header>
+    <div class="logo">
+      <img src="src/cave.jpg" alt="Logo Doris" />
+      <h1>DORIS GONZALES DELGADILLO</h1>
+    </div>
+    <nav class="menu">
+      <ul>
+        <li><a href="#inicio" class="btn">INICIO</a></li>
+        
+        
+        <li class="menu-hobby">
+         <a href="#" class="btn" id="hobbyBtn">MIS HOBBIES ▾</a>
+
+       <div class="submenu" id="subHobby">
+        <a href="#voley" class="item-submenu">
+          <span class="icon">🏐</span>
+          <span>Jugar Vóley</span>
+        </a>
+
+        <a href="#cantar" class="item-submenu">
+          <span class="icon">🎤</span>
+          <span>Cantar</span>
+        </a>
+
+        <a href="#musica" class="item-submenu">
+          <span class="icon">🎵</span>
+          <span>Escuchar Música</span>
+        </a>
+      </div>
+        </li>
+        <li><a href="#contacto" class="btn">CONTACTO</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Sección principal -->
+   
+  <section id="inicio" class="hero">
+    <div class="presentacion">
+      <img src="src/doris.jpg" alt="Foto de Doris" class="perfil" />
+      <h2>Hola, soy <span>Doris Gonzales Delgadillo</span></h2>
+      <p>Joven de 21 años de C.P. Llipllina, distrito Rosario, provincia de Acobamba.</p>
+      <p class="frase">✨ La música alegra mi alma, el vóley mi energía y el canto mi corazón. ✨</p>
+      <div class="botones-hobby">
+        <a href="#voley" class="boton">🏐 Vóley</a>
+        <a href="#cantar" class="boton">🎤 Cantar</a>
+        <a href="#musica" class="boton">🎵 Música</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección hobbies -->
+  <section id="hobby" class="hobbies">
+    <div id="voley" class="hobby">
+      <h3>🏐 Mi Hobby: Jugar Vóley</h3>
+      <img src="src/voly.jpg" alt="Vóley" />
+      <p>Me encanta jugar vóley porque me mantiene activa, feliz y me enseña a trabajar en equipo.</p>
+    </div>
+
+    <div id="cantar" class="hobby">
+      <h3>🎤 Mi Hobby: Cantar</h3>
+      <img src="src/cantar.webp" alt="Cantar" />
+      <p>Cantar me permite expresar mis emociones y conectar con las personas a través de la voz.</p>
+    </div>
+
+    <div id="musica" class="hobby">
+      <h3>🎵 Escuchar Música</h3>
+      <p>Me gusta disfrutar diferentes géneros musicales. Aquí algunos de mis favoritos:</p>
+
+      <div id="huayno" class="genero">
+        <h4>🎶 Huayno</h4>
+        <img src="src/lobooo.jpg" alt="Huayno" />
+        <audio controls>
+          <source src="src/music/lobo.mpeg" type="audio/mpeg" />
+        </audio>
+      </div>
+
+      <div id="romantico" class="genero">
+        <h4>💃 Romántico</h4>
+        <img src="src/romantico.png" alt="Romántico" />
+        <audio controls>
+          <source src="src/music/romantico.mpeg" type="audio/mpeg" />
+        </audio>
+      </div>
+
+      <div id="electro" class="genero">
+        <h4>⚡ Electro</h4>
+        <img src="src/electro.jpg" alt="Electro" />
+        <audio controls>
+          <source src="src/music/alan.mpeg" type="audio/mpeg" />
+        </audio>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="contacto">
+    <h2>📩 Contáctame</h2>
+    <p>Si compartes mis pasiones, ¡escríbeme para hablar de música, canto o vóley!</p>
+    <button id="btnMensaje" class="boton">Enviar mensaje</button>
+  </section>
+
+  <footer>
+    <p>© 2025 Doris Gonzales Delgadillo | Mi Hobby Personal 💛</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
